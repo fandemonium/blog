@@ -7,7 +7,8 @@ baseurl: /
 layouts: ./_layouts
 #exclude: [2013-01-27-markdown-howto.md, 2014-03-09-welcome-to-jekyll.markdown, 2013-10-23-Design-Deploy-Service.md]
 port: 4000
-url: http://localhost:4000
+#url: http://localhost:4000
+url: http://t00ky.github.io/Borderline_Chaotic
 
 title: BorderlineChaotic
 tagline: 'Jekyll blog'
