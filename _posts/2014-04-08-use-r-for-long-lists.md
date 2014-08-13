@@ -29,13 +29,13 @@ head(uniprokb)
 Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
 head(Asp)
 ```
->                     V1      V2    V3           V4
->1 \>K1VXR2_TRIAC/235-496 [subseq from] K1VXR2_TRIAC
->2 \>K1VXR2_TRIAC/536-823 [subseq from] K1VXR2_TRIAC
->3 \>F5HFH8_CRYNB/126-436 [subseq from] F5HFH8_CRYNB
->4 \>Q5KNQ9_CRYNJ/126-436 [subseq from] Q5KNQ9_CRYNJ
->5 \>J9VH59_CRYNH/126-436 [subseq from] J9VH59_CRYNH
->6 \>S7QJL1_GLOTA/96-407 [subseq from] S7QJL1_GLOTA
+>|                  V1| |   V2| | V3| |       V4|
+>|1| |\>K1VXR2_TRIAC/235-496| |[subseq from]| |K1VXR2_TRIAC|
+>|2| |\>K1VXR2_TRIAC/536-823| |[subseq from]| |K1VXR2_TRIAC|
+>|3| |\>F5HFH8_CRYNB/126-436| |[subseq from]| |F5HFH8_CRYNB|
+>|4| |\>Q5KNQ9_CRYNJ/126-436| |[subseq from]| |Q5KNQ9_CRYNJ|
+>|5| |\>J9VH59_CRYNH/126-436| |[subseq from]| |J9VH59_CRYNH|
+>|6| |\>S7QJL1_GLOTA/96-407| |[subseq from]| |S7QJL1_GLOTA|
 >
 >\> Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
 >\> head(Asp.id)
