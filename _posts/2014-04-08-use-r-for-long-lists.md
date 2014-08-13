@@ -11,13 +11,19 @@ uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F
 head(uniprokb)
 ```
 >\>      V1       V2
+>
 >\>1 P21215 Bacteria
+>
 >\>2 P80438 Bacteria
+>
 >\>3 Q8GBW6 Bacteria
+>
 >\>4 O42766    Fungi
+>
 >\>5 Q8SW28    Fungi
+>
 >\>6 Q99002    Fungi
->\>
+>
 
 ```R
 Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
