@@ -10,16 +10,19 @@ I am a newbie when it comes to lots of things, including python and R. I can use
 uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
 head(uniprokb)
 ```
->      V1       V2
->1 P21215 Bacteria
->2 P80438 Bacteria
->3 Q8GBW6 Bacteria
->4 O42766    Fungi
->5 Q8SW28    Fungi
->6 Q99002    Fungi
->
->\> Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
->\> head(Asp)
+>\>      V1       V2
+>\>1 P21215 Bacteria
+>\>2 P80438 Bacteria
+>\>3 Q8GBW6 Bacteria
+>\>4 O42766    Fungi
+>\>5 Q8SW28    Fungi
+>\>6 Q99002    Fungi
+>\>
+
+```R
+Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
+head(Asp)
+```
 >                     V1      V2    V3           V4
 >1 \>K1VXR2_TRIAC/235-496 [subseq from] K1VXR2_TRIAC
 >2 \>K1VXR2_TRIAC/536-823 [subseq from] K1VXR2_TRIAC
