@@ -7,8 +7,8 @@ tags: productivity
 I am a newbie when it comes to lots of things, including python and R. I can use them but I cannot make them do magic in the most efficient way... I always use python to parse files (e.g., get rid of redundant lines/columns, insert tabs, matching ID's, etc.) and get them into the desired format before I use R for downstream analysis (e.g., statistics, plotting, etc.). It worked well until recentrly when I was trying to connect ID's in UniprotKB with my assembly ID's. The UniprotKB ID list was simply too large for python dictionary to work efficiently (and it could also simiply be that I didn't know other ways to use python more efficiently). Regardless, I decided to give it a go in R and surprisingly (to me), R memory handled it really well. Below is some of the codes and examples (mostly a note of self for next time). 
 
 ```R
-	uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
-	head(uniprokb)
+uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
+head(uniprokb)
 ```
 >      V1       V2
 >1 P21215 Bacteria
