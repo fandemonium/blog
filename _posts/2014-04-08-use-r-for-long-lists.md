@@ -10,52 +10,53 @@ I am a newbie when it comes to lots of things, including python and R. I can use
 uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
 head(uniprokb)
 ```
->\>      V1       V2
->
->\>1 P21215 Bacteria
->
->\>2 P80438 Bacteria
->
->\>3 Q8GBW6 Bacteria
->
->\>4 O42766    Fungi
->
->\>5 Q8SW28    Fungi
->
->\>6 Q99002    Fungi
+>\>      V1       V2   
+>\>1 P21215 Bacteria   
+>\>2 P80438 Bacteria   
+>\>3 Q8GBW6 Bacteria   
+>\>4 O42766    Fungi   
+>\>5 Q8SW28    Fungi   
+>\>6 Q99002    Fungi   
 >
 
 ```R
 Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
 head(Asp)
 ```
->                  V1    V2  V3        V4    
->1 \>K1VXR2\_TRIAC/235-496 [subseq from] K1VXR2_TRIAC   
->2 \>K1VXR2\_TRIAC/536-823 [subseq from] K1VXR2_TRIAC   
->3 \>F5HFH8\_CRYNB/126-436 [subseq from] F5HFH8_CRYNB   
->4 \>Q5KNQ9\_CRYNJ/126-436 [subseq from] Q5KNQ9_CRYNJ    
->5 \>J9VH59\_CRYNH/126-436 [subseq from] J9VH59_CRYNH   
->6 \>S7QJL1\_GLOTA/96-407 [subseq from] S7QJL1_GLOTA   
+>\>                  V1    V2  V3        V4    
+>\>1 \>K1VXR2\_TRIAC/235-496 [subseq from] K1VXR2_TRIAC   
+>\>2 \>K1VXR2\_TRIAC/536-823 [subseq from] K1VXR2_TRIAC   
+>\>3 \>F5HFH8\_CRYNB/126-436 [subseq from] F5HFH8_CRYNB   
+>\>4 \>Q5KNQ9\_CRYNJ/126-436 [subseq from] Q5KNQ9_CRYNJ    
+>\>5 \>J9VH59\_CRYNH/126-436 [subseq from] J9VH59_CRYNH   
+>\>6 \>S7QJL1\_GLOTA/96-407 [subseq from] S7QJL1_GLOTA   
 >
->\> Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
->\> head(Asp.id)
->      X1    X2
->1 K1VXR2 TRIAC
->2 K1VXR2 TRIAC
->3 F5HFH8 CRYNB
->4 Q5KNQ9 CRYNJ
->5 J9VH59 CRYNH
->6 S7QJL1 GLOTA
+
+```R
+Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
+head(Asp.id)
+```
+
+>\>      X1    X2  
+>\>1 K1VXR2 TRIAC   
+>\>2 K1VXR2 TRIAC   
+>\>3 F5HFH8 CRYNB   
+>\>4 Q5KNQ9 CRYNJ    
+>\>5 J9VH59 CRYNH   
+>\>6 S7QJL1 GLOTA   
 >
->> asp.tax<-cbind(Asp.id, uniprokb$V2[match(Asp.id$X1, uniprokb$V1)])
->> head(asp.tax)
->      X1    X2 uniprokb$V2[match(Asp.id$X1, uniprokb$V1)]
->1 K1VXR2 TRIAC                                      Fungi
->2 K1VXR2 TRIAC                                      Fungi
->3 F5HFH8 CRYNB                                      Fungi
->4 Q5KNQ9 CRYNJ                                      Fungi
->5 J9VH59 CRYNH                                      Fungi
->6 S7QJL1 GLOTA                                      Fungi
+
+```R
+asp.tax<-cbind(Asp.id, uniprokb$V2[match(Asp.id$X1, uniprokb$V1)])   
+head(asp.tax)   
+```
+>\>      X1    X2 uniprokb$V2[match(Asp.id$X1, uniprokb$V1)]   
+>\>1 K1VXR2 TRIAC                                      Fungi   
+>\>2 K1VXR2 TRIAC                                      Fungi   
+>\>3 F5HFH8 CRYNB                                      Fungi   
+>\>4 Q5KNQ9 CRYNJ                                      Fungi   
+>\>5 J9VH59 CRYNH                                      Fungi   
+>\>6 S7QJL1 GLOTA                                      Fungi  
 > 
 >> asp.na<-subset(asp.tax, is.na(asp.tax[, 3]))
 >> head(asp.na)
