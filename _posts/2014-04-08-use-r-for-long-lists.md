@@ -24,6 +24,7 @@ uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F
 ~~~
   
 Do a quick check on the table imported.   
+
       > head(uniprokb)
       >      V1       V2   
       >1 P21215    Bacteria   
