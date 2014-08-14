@@ -9,12 +9,12 @@ I am a newbie when it comes to lots of things, including python and R. I can use
 <!--more-->
 
 ```R
-\> uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
-\> head(uniprokb)
+> uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
+> head(uniprokb)
 ```
->\>      V1       V2   
->\>1   P21215    Bacteria   
->\>2   P80438    Bacteria   
+      >\>      V1       V2   
+      >\>1   P21215    Bacteria   
+      >\>2   P80438    Bacteria   
 >\>3 Q8GBW6 Bacteria   
 >\>4 O42766    Fungi   
 >\>5 Q8SW28    Fungi   
@@ -22,8 +22,8 @@ I am a newbie when it comes to lots of things, including python and R. I can use
 >
 
 ```R
-Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
-head(Asp)
+> Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
+> head(Asp)
 ```
 >\>                      V1    V2  V3        V4    
 >\>1 \>K1VXR2\_TRIAC/235-496 [subseq from] K1VXR2\_TRIAC   
