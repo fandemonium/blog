@@ -8,11 +8,11 @@ I am a newbie when it comes to lots of things, including python and R. I can use
 
 <!--more-->
 
----
+~~~
 uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
-
+~~~
 head(uniprokb)
----
+~~~
       >      V1       V2   
       >1 P21215    Bacteria   
       >2 P80438    Bacteria   
