@@ -125,7 +125,7 @@ ref_rpob_pro$ref_rpoB_org<-unique(ref_rpob.id$X1)
 V<-Venn(ref_rpob_pro)
 ```
 
-Save plot directly to file!
+Save plot directly to file!   
 ```R
 pdf("ref_rpob_pro_org_venn.pdf")
 
