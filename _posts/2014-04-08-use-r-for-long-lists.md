@@ -18,10 +18,12 @@ Objectives:
 + Check how many genes overlap between groups (e.g., how many protease genes belong the organisms that were found in rpoB gene file)
 
 1. Read in the super long list of ID's queried from UniprotKB dat file.   
+
 ~~~
 uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
 ~~~
-  Do a quick check on the table imported.   
+  
+Do a quick check on the table imported.   
       > head(uniprokb)
       >      V1       V2   
       >1 P21215    Bacteria   
@@ -32,10 +34,11 @@ uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F
       >6 Q99002    Fungi   
 
 2. Read in the list of genes queried from the gene fasta file (Asp in the beneath example).  
-   ```R
-   Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
-   ```
+```R
+Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
+```
   a. Also do a quick check on the table imported.  
+      
       > head(Asp)
       >                      V1    V2  V3        V4    
       >1 >K1VXR2_TRIAC/235-496 [subseq from] K1VXR2_TRIAC   
@@ -46,9 +49,10 @@ uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F
       >6 >S7QJL1_GLOTA/96-407 [subseq from] S7QJL1_GLOTA   
 
   b. As it's observed, the sequence ID's need to be parsed.
-     ```R
-     Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
-     ```
+
+  ~~~     
+  Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
+  ~~~
 
       > head(Asp.id)
       >      X1    X2  
