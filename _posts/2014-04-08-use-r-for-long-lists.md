@@ -4,13 +4,24 @@ title: Matching ID's for Tables in R
 categories: R
 tags: productivity  
 ---
-I am a newbie when it comes to lots of things, including python and R. I can use them but I cannot make them do magic in the most efficient way... I always use python to parse files (e.g., get rid of redundant lines/columns, insert tabs, matching ID's, etc.) and get them into the desired format before I use R for downstream analysis (e.g., statistics, plotting, etc.). It worked well until recentrly when I was trying to connect ID's in UniprotKB with my assembly ID's. The UniprotKB ID list was simply too large for python dictionary to work efficiently (and it could also simiply be that I didn't know other ways to use python more efficiently). Regardless, I decided to give it a go in R and surprisingly (to me), R memory handled it really well. Below is some of the codes and examples (mostly a note of self for next time). 
+I am a newbie when it comes to lots of things, including python and R. I can use them but I cannot make them do magic in the most efficient way... I always use python to parse files (e.g., get rid of redundant lines/columns, insert tabs, matching ID's, etc.) and get them into the desired format before I use R for downstream analysis (e.g., statistics, plotting, etc.). It worked well until recentrly when I was trying to connect ID's in UniprotKB with my assembly ID's. The UniprotKB ID list was simply too large for python dictionary to work efficiently (and it could also simiply be that I didn't know other ways to use python more efficiently). Regardless, I decided to give it a go in R and surprisingly (to me), R memory handled it really well. Below is some of the codes and examples (mostly a note to self for next time). 
 
 <!--more-->
+**Note:** This method eventually didn't work out because UniProt fasta file contains sequence ID's (some are old ID's) that might be different from the BioPython queried UniProtKB dat file ID's.
 
+Prerequisites: 
++ A tab delimited file containing sequence ID and taxa (parsed by using biopython)   
++ Other tab delimited files that need to be compared (each file was extracted from fasta files by using grep)   
+
+Objectives:
++ Confirm some of the genes are bacterial only (or fungi only). 
++ Check how many genes overlap between groups (e.g., how many protease genes belong the organisms that were found in rpoB gene file)
+
+1. Read in the super long list of ID's queried from UniprotKB dat file.   
 ~~~
 uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
 ~~~
+  Do a quick check on the table imported.   
       > head(uniprokb)
       >      V1       V2   
       >1 P21215    Bacteria   
@@ -20,9 +31,11 @@ uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F
       >5 Q8SW28    Fungi   
       >6 Q99002    Fungi   
 
-```R
-Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
-```
+2. Read in the list of genes queried from the gene fasta file (Asp in the beneath example).  
+   ```R
+   Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
+   ```
+  a. Also do a quick check on the table imported.  
       > head(Asp)
       >                      V1    V2  V3        V4    
       >1 >K1VXR2_TRIAC/235-496 [subseq from] K1VXR2_TRIAC   
@@ -32,10 +45,10 @@ Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/A
       >5 >J9VH59_CRYNH/126-436 [subseq from] J9VH59_CRYNH   
       >6 >S7QJL1_GLOTA/96-407 [subseq from] S7QJL1_GLOTA   
 
-
-```R
-Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
-```
+  b. As it's observed, the sequence ID's need to be parsed.
+     ```R
+     Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
+     ```
 
       > head(Asp.id)
       >      X1    X2  
@@ -128,10 +141,8 @@ V<-Venn(ref_rpob_pro)
 Save plot directly to file!   
 
 ```R
-pdf("ref_rpob_pro_org_venn.pdf")
-
-plot(V, doWeight=F)
-
-dev.off()
+pdf("ref_rpob_pro_org_venn.pdf")   
+plot(V, doWeight=F)   
+dev.off()   
 ```
 
