@@ -11,8 +11,7 @@ I am a newbie when it comes to lots of things, including python and R. I can use
 ~~~
 uniprokb<-read.delim("~/Documents/Databases/uniprotKB_id_microbes.txt", header=F)
 ~~~
-head(uniprokb)
-~~~
+      > head(uniprokb)
       >      V1       V2   
       >1 P21215    Bacteria   
       >2 P80438    Bacteria   
@@ -23,17 +22,16 @@ head(uniprokb)
 
 ```R
 Asp<-read.table("/Users/metagenomics/Documents/Fan/scratch/pfam_done/ToAnalyze/Asp/ref_aligned.faa.ref.list", header=F, sep=" ")
-
-head(Asp)
 ```
->\>                      V1    V2  V3        V4    
->\>1 \>K1VXR2\_TRIAC/235-496 [subseq from] K1VXR2\_TRIAC   
->\>2 \>K1VXR2\_TRIAC/536-823 [subseq from] K1VXR2\_TRIAC   
->\>3 \>F5HFH8\_CRYNB/126-436 [subseq from] F5HFH8\_CRYNB   
->\>4 \>Q5KNQ9\_CRYNJ/126-436 [subseq from] Q5KNQ9\_CRYNJ    
->\>5 \>J9VH59\_CRYNH/126-436 [subseq from] J9VH59\_CRYNH   
->\>6 \>S7QJL1\_GLOTA/96-407 [subseq from] S7QJL1\_GLOTA   
->
+      > head(Asp)
+      >                      V1    V2  V3        V4    
+      >1 \>K1VXR2\_TRIAC/235-496 [subseq from] K1VXR2\_TRIAC   
+      >2 \>K1VXR2\_TRIAC/536-823 [subseq from] K1VXR2\_TRIAC   
+      >3 \>F5HFH8\_CRYNB/126-436 [subseq from] F5HFH8\_CRYNB   
+      >4 \>Q5KNQ9\_CRYNJ/126-436 [subseq from] Q5KNQ9\_CRYNJ    
+      >5 \>J9VH59\_CRYNH/126-436 [subseq from] J9VH59\_CRYNH   
+      >6 \>S7QJL1\_GLOTA/96-407 [subseq from] S7QJL1\_GLOTA   
+
 
 ```R
 Asp.id<-data.frame(do.call('rbind', strsplit(as.character(Asp$V4), '_', fixed=T)))
