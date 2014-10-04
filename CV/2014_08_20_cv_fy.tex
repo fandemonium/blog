@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plasmati Graduate CV
+% LaTeX Template
+% Version 1.0 (24/3/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Alessandro Plasmati (alessandro.plasmati@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template needs to be compiled with XeLaTeX.
+% The main document font is called Fontin and can be downloaded for free
+% from here: http://www.exljbris.com/fontin.html
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article} % Default font size and paper size
+
+\usepackage{fontspec} % For loading fonts
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin} % Main document font
+
+\usepackage{xunicode,xltxtra,url,parskip} % Formatting packages
+
+\usepackage[usenames,dvipsnames]{xcolor} % Required for specifying custom colors
+
+\usepackage{fullpage}
+\addtolength{\voffset}{-0.5cm}
+%\usepackage[big]{layaureo} % Margin formatting of the A4 page, an alternative to layaureo can be \usepackage{fullpage}
+% To reduce the height of the top margin uncomment: \addtolength{\voffset}{-1.3cm}
+
+\usepackage{hyperref} % Required for adding links	and customizing them
+\definecolor{linkcolour}{rgb}{0,0.2,0.6} % Link color
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour} % Set link colors throughout the document
+
+\usepackage{titlesec} % Used to customize the \section command
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule] % Text formatting of sections
+\titlespacing{\section}{0pt}{3pt}{3pt} % Spacing around sections
+
+\begin{document}
+
+\pagestyle{empty} % Removes page numbering
+
+\font\fb=''[cmr10]'' % Change the font of the \LaTeX command under the skills section
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\par{\centering{\Huge Fan \textsc{Yang}}\bigskip\par} % Your name
+
+\section{Personal Data}
+
+\begin{tabular}{rl}
+%\textsc{Place and Date of Birth:} & Canada  | 20 November 1987 \\
+\textsc{Address:} & 251 Bessey Hall, Iowa State University, Ames, IA 50014\\
+\textsc{Phone:} & +1 (517) 974 4682\\
+\textsc{email:} & \href{mailto:fyang@iastate.edu}{fyang@iastate.edu}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE 
+%----------------------------------------------------------------------------------------
+
+\section{Research Experience}
+
+\begin{tabular}{r|p{13cm}}
+\emph{Current} & Post-doctoral researcher at \textsc{Iowa State University},\\
+\textsc{Jan 2013} & \emph{Investigate the impacts of global climate change on carbon and nitrogen cycles in SPRUCE peatland, at Marcell experimental forest, MN}\\ 
+& \footnotesize{
+\begin{itemize}
+    \item Microbial metatranscriptomics in complex soil microbial communities    \item Guided gene assembly with short-read metagenomic sequences     \item Gene targeted sequencing of bacterial 16S rRNA genes and fungal ITS genes (Illumina paired end)    \item Microbial community sequence analysis by using Quantitative Insights Into Microbial Ecology (QIIME)    \item Measurements of microbial biomass and extracellular enzyme activities    \item Field sampling in peat bogs
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Jan 2008-Dec 2013} & Doctoral research assistant at \textsc{Michigan State University},\\
+& \emph{Investigate the role of bacterial populations and communities in heavy metal remediation and dairy manure co-digesters}\\ 
+& \footnotesize{
+\begin{itemize}
+    \item Anaerobic isolation and cultivation of soil and sediment bacteria    \item Gene targeted 454 sequencing of bacterial 16S rRNA genes    \item Construct clone libraries for microbial marker and functional genes    \item Functional gene microarray of environmentally-relevant genes    \item Terminal-Restriction Fragment Length Polymorphism (T-RFLP) analysis on bacterial 16S rRNA genes     \item Microbial community sequence analysis by using Ribosomal Database Project (RDP, both web-based and command-line) and MOTHUR    \item Construct phylogenetic trees by using Arb and Molecular Evolutionary Genetics Analysis (MEGA)    \item Annotate gene sequences by using command-line Basic Local Alignment Search Tool (BLAST)    \item Comparative genome analysis by using MAUVE multiple genome alignment tool    \item HPLC analysis of bacterial products from growth media    \item Total RNA extraction and reverse-transcription PCR
+\end{itemize}
+}\\
+\multicolumn{2}{c}{} \\
+
+%------------------------------------------------
+
+\textsc{Sep 2005-Dec 2007} & Master research assistant at \testsc{Michigan State University},\\
+& \emph{Cooperative binding of copper by \textit{Ralstonia pickettii} strains 12D and 12J}\\
+& \footnotesize{
+\begin{itemize}
+    \item Bioadsorption and bioaccumulation of copper by \textit{R. picketii}    \item Cell physiological responses to the presence of copper
+\end{itemize}
+}
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\begin{tabular}{rl}	
+\textsc{Jan} 2013 & \textsc{Environmental Engineering, PhD.}\\
+& \textbf{Michigan State University, East Lansing, MI}\\
+& \small Co-advisor: Dr. Thomas C. \textsc{Voice} {\hfill Co-advisor: Dr. Terence L. \textsc{Marsh}}\\
+%&\normalsize \textsc{Gpa}: 8.0/9.0\hyperlink{grds}{\hfill | \footnotesize Detailed List of Exams}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Dec} 2007 & \textsc{Industrial Microbiology, Professional MS.}\\
+& \textbf{Michigan State University, East Lansing, MI}\\
+& \small Advisor: Terence L. \textsc{Marsh}\\
+&\\
+
+%------------------------------------------------
+
+\textsc{Aug} 2005 & \textsc{Environmental Biology/Microbiology, BS.}\\
+& \textbf{Michigan State University, East Lansing, MI}\\
+&\\
+
+%------------------------------------------------
+
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+%	Sequencing analysis experience
+%----------------------------------------------------------------------------------------
+
+\section{Sequencing Analysis Experience}
+
+Amplicon sequencing analysis, \\
+shotgun metagenomic and metatranscriptomic sequencing analysis, \\
+de novo/reference-based gene assembly, \\
+reference based gene analysis/annotation, \\
+multivariable ecological analysis
+
+%----------------------------------------------------------------------------------------
+%	Software Experience 
+%----------------------------------------------------------------------------------------
+
+\section{Software Experience}
+
+R, Python, Version control (git)
+
+%----------------------------------------------------------------------------------------
+%	Publications
+%----------------------------------------------------------------------------------------
+
+\section{Publications}
+
+\begin{tabular}{rl}	
+\textsc{Forthcoming} & \textsc{Yang, F.; Hofmockel, K.S.,} & \textbf{The Genetic Potential for Organic N Decomposition\\ at Marcell Experimental Forest Peatland Ecosystem, MN.}\\
+& \small In preparation.
+&\\
+
+%------------------------------------------------\textsc{Yang, F.; Kim, SH.; Frantz, P.N.; Isaacs, N.; Marsh, T.L.,}\\ 
+& \textbf{Identification of a Filamentous Phage and Integrated Prophages in Copper-& Resistant Ralstonia pickettii Strains.}\\
+& \small In preparation.\\
+&\\
+%------------------------------------------------\textsc{Yang, F.; Voice, T.C.; Marsh, T.L.,}\\
+& \textbf{Resources Induced Bacterial Community Structure and Function Shifts.}\\
+& \samall In preparation.\\
+&\\
+%------------------------------------------------
+\textsc{Yang, F.; Chen, R.; Yue, Z.; Liao, W.; Marsh, T.L.,} 2014. 
+& \textbf{Phylogenetic Analysis of Anaerobic Co-digestion of Animal Manure and Corn Stover Reveals Linkages between Bacterial Communities and Digestion Performance.}\\
+& \small Submitted to FEMS Microbial Ecology.\\
+&\\
+
+\end{tabular}
+%----------------------------------------------------------------------------------------
+%	SCHOLARSHIPS AND ADDITIONAL INFO
+%----------------------------------------------------------------------------------------
+
+\section{Scholarships and Certificates}
+
+\begin{tabular}{rl}
+\textsc{Sept.} 2012 & Faculty of Science Masters Scholarship \footnotesize(\$30,000)\normalsize\\
+
+\textsc{June} 2010 & {\textsc{Gmat}\textregistered}\setmainfont[SmallCapsFont=Fontin SmallCaps]{Fontin-Regular}: 730 (\textsc{q:50;v:39}) 96\textsuperscript{th} percentile; \textsc{awa}: 6.0/6.0 (89\textsuperscript{th} percentile)
+\end{tabular}
+
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+%----------------------------------------------------------------------------------------
+%	GRADE TABLES
+%----------------------------------------------------------------------------------------
+
+\par{\centering\Large \hypertarget{grds}{Master of Science in \textsc{Finance}}\par}\large{\centering Grades\par}\normalsize
+
+\begin{center}
+\begin{tabular}{lcc}
+\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade}&\textsc{Credit Hrs}\\ \hline
+Corporate Finance (Valuation) & 25 & 6\\
+Financial Statement Analysis & 28 & 6\\
+Statistics & 27 & 6\\
+Theory of Finance & 26 & 6\\
+Quantitative Methods for Finance & 30 & 6\\
+Econometrics & 24 & 6\\
+Derivatives & 31 & 6\\
+Management of Financial and Insurance Companies & 30 & 6\\
+Business Law & 31 & 6\\
+Investment Banking	& 28 & 6\\ \\		
+Behavioral Models for Economics and Finance	 & 29 & 6\\
+Numerical Methods for Finance & 29 & 6\\
+Advanced Derivatives & 30 & 6\\
+Fixed Income (Advanced Methods) & 30 & 6\\ \\
+English Language & 30 &	4\\
+French Language & 31 &	4\\	
+Internship & & 8\\		
+Final Thesis & & 20\\	
+& Total & 120\\\cline{2-3}
+&\textsc{Gpa}&\textbf{8.0}
+\end{tabular}
+\end{center}
+\bigskip
+\hrule
+\bigskip
+
+%------------------------------------------------
+
+\bigskip
+
+\par{\centering\Large \hypertarget{grds_usc}{Exchange Program at \textsc{usc}, Los Angeles}\par}\large{\centering Grades\par}\normalsize
+
+\begin{center}
+\begin{tabular}{lcc}
+\multicolumn{1}{c}{\textsc{Exam}} & \textsc{Grade} & \textsc{Grade Points}\\ 
+\hline
+Corporate Financial Strategy & A & 4\\
+Derivatives & A & 4\\
+Money, Credit, and Banking & A & 4\\
+Business Strategy & A- & 3.5\\
+& &\\\cline{2-3}
+& \textsc{Gpa} & \textbf{3.875}
+\end{tabular}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
