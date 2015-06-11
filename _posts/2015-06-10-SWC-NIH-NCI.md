@@ -5,7 +5,7 @@ categories: teaching
 tags: SWC
 ---
 
-This is really fresh! I just finished my two day software carpentry workshop held at 
+This is really fresh! I just finished my two day [software carpentry workshop](http://guyer.github.io/2015-06-09-nih/) held at 
 National Cancer Institute (NCI), Rockville, MD. The course went for 2 days, from June 
 9th to June 10th and taught by [Jonathan Guyer](http://www.nist.gov/mml/msed/mechanical_performance/jonathanguyer.cfm), [Adina Howe](http://adina.github.io), and I. I was in charge 
 of the unix shell and version control (git) sessions. Personally, I think the course
@@ -56,7 +56,7 @@ course materials at the same time. Therefore, I chosed the old one continuous pa
 during the course. This way, students can easily scroll back and forth and use search to find
 the information they need without the need to understanding how things are categorized. 
 
-As for git, I taught it with modified slides devloped by Nelle VXXXXX. I chose to use
+As for git, I taught it with modified slides devloped by [Nelle Varoquaux](http://cbio.ensmp.fr/~nvaroquaux/). I chose to use
 Nelle's slides not only because it has a nice continuous page version, but also because
 it is simple, clear, and covers the most powerful features of git. It also made a very
 clear distinction between git and Github, which many students thought was the same thing. 
@@ -79,6 +79,8 @@ especially if they use windows system.
 3. Make sure the facility you are going to is the only facility with that name in the area.
 With that being said, there were 2 NCI in Maryland. There were some panicing moments, but 
 that's a story for another time :). 
+
+4. Uber (and your smart phone with data access...) is your best friend in a metro area!
 
 4. Timing is always challenging. While it is important to build the basics, students may be
 able to battle through the easy commands on their own with a breif introduction. As I mentioned
