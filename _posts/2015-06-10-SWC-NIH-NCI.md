@@ -20,7 +20,7 @@ _**Audience**_
 Majority of the audience are research scientists and several are computer scientists! This
 created a big range of computational skills among studends. The organizer did an awesome
 job on collecting the pre-class information, including expectations and self-defined
-computertational skills (Many many thanks to [Michelle Dunn](https://www.linkedin.com/pub/michelle-dunn/48/428/6a] and [Lisa Federer](http://nihlibrary.campusguides.com/lisafederer)!). For unix shell, 40% of the students identified
+computertational skills (Many many thanks to [Michelle Dunn](https://www.linkedin.com/pub/michelle-dunn/48/428/6a) and [Lisa Federer](http://nihlibrary.campusguides.com/lisafederer)!). For unix shell, 40% of the students identified
 themselves as advanced beginners, 20% as novice, 20% has never used shell, and the
 rest were either proficient or competent. This was particularly challenging for me in
 adjusting the teaching speed and contents. Out of all of the materials I wished to cover,
