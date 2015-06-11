@@ -8,7 +8,7 @@ tags: SWC
 This is really fresh! I just finished my two day [software carpentry workshop](http://guyer.github.io/2015-06-09-nih/) held at 
 National Cancer Institute (NCI), Rockville, MD. The course went for 2 days, from June 
 9th to June 10th and taught by [Jonathan Guyer](http://www.nist.gov/mml/msed/mechanical_performance/jonathanguyer.cfm), [Adina Howe](http://adina.github.io), and I. I was in charge 
-of the unix shell and version control (git) sessions. Personally, I think the course
+of the unix shell and version control (git) sessions (Also many thanks to Dilip Banerjee, Lynn Young for the help!). Personally, I think the course
 went really well but there are definitely things I could adjust and improve in the future. Below
 is the run downs.
 
