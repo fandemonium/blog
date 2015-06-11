@@ -95,7 +95,9 @@ wished more time was spent on the later part of the shell course. The later part
 materials  were also clearly
 what motivate students to learn simply because the likelihood of potential daily usages.
 So next time, I'm going to introduce the shell navigation (up to redirection) more swiftly
-and make sure the students get to see the core values of unix shell. 
+and make sure the students get to see the core values of unix shell. Some students also thinks
+short cuts, especially tab completion, should be introduced earlier. I think it's a great idea
+and both students and instructor could benefit from it. 
 
 5. Students love git! Many expressed the surprise on how useful it is :).
 
