@@ -14,7 +14,8 @@ is the run downs.
 
 <!--more-->
 
-**Audience**
+
+_**Audience**_
 
 Majority of the audience are research scientists and several are computer scientists! This
 created a big range of computational skills among studends. The organizer did an awesome
@@ -27,7 +28,8 @@ I went over pipe and `grep` really quick and barely had time to introduce `find`
 the shell materials, I was also glad that the students with limited shell experience
 seemed to be able to follow without too much frustration. 
 
-**Setups**
+
+_**Setups**_
 
 Like audience experience differences, computer setup is another challenge I faced. Many
 of you may nod to yourselves and say "like always!". I do have to say it's much less 
@@ -40,7 +42,8 @@ things we couldn't resolve was: nano wasn't accessable from all windows computer
 we don't know how to copy text within gitbash (in case you wonder how to paste, use 
 `insert` key).
 
-**Course Materials**
+
+_**Course Materials**_
 
 I like the SWC V5 course materials. I think seperated sections are great for students to
 learn on their own. However, I find it not easy for me or students to 
@@ -69,7 +72,8 @@ things could be changed and things should not be changed in commands. This becom
 as much as possible of what's happening on the screen. In addition, git output displays
 message differently from repo to repo. I believe showing repos with my personalized outputs would cause more confusions. 
 
-**Some Important Lessons Learned**
+
+_**Some Important Lessons Learned**_
 
 1. Our audience loved the stickie system! 
 
@@ -118,7 +122,8 @@ the idea that maybe sqlite3 should be taught first to build students' confidence
 It's the most language like and the closest for scientists to relate to  compare to shell, git,
 and python. It could be something to think about in the future during lessons planning.
 
-**A Successful Course?**
+
+_**A Successful Course?**_
 
 I believe so! Well, I tried my best for this round. There are always room for improval but I
 didn't scare any students away (I hope not...). That's all I have for now until next time!
