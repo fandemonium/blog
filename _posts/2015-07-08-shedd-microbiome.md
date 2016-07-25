@@ -1,0 +1,1 @@
+Shedd aquarium, located in the heart of Chicaog, is one of the most advantuarous place for people who grew up in the Midwest, US.But how many people get to say "My first visit to the Shedd Aquiarium was when I was 14, and now I'm working here as a microbiome scientist!"
