@@ -14,8 +14,8 @@ title: Borderline Elementary
 #tagline: 'Jekyll blog'
 #description: 'Base Jekyll theme hushaw by @hushaw'
 #url: http://fandemonium.github.io
-#pages_list:
-#  About: '/about'
-#  Archive: '/archive'
-#  Categories: '/Categories'
-#  Tags: '/tags'
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+  Categories: '/Categories'
+  Tags: '/tags'
